@@ -1,0 +1,1 @@
+using PersonDetailService as service from '../../srv/my_service';

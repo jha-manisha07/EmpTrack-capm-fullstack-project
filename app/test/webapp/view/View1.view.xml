@@ -1,0 +1,47 @@
+<mvc:View controllerName="test.capm.app.test.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <VBox id="V1" >
+    <Panel id="panel" >
+        
+        <HBox id="H1">
+        <Label id="Label1" text="First Name" width="150px" />
+        <Input id ="Input1" width="180px" />
+        </HBox>
+
+        <HBox id="H2">
+        <Label id="Label2" text="Last Name" width="150px" />
+        <Input id ="Input2" width="180px" />
+         </HBox>
+
+        <HBox id="H3">
+        <Label id="Label3" text="Email" width="150px" />
+        <Input id ="Input3" width="180px" />
+         </HBox>
+
+         <HBox id="H4">
+        <Label id="Label4" text="Position" width="150px" />
+        <Input id ="Input4" width="180px" />
+         </HBox>
+
+        <HBox id="H5">
+        <Label id="Label5" text="Salary" width="150px" />
+        <Input id ="Input5"  width="180px" />
+         </HBox>
+
+        <HBox id="H6">
+        <Label id="Label6" text="Joining Date"  width="150px"/>
+        <Input id ="Input6" width="180px" />
+         </HBox>
+
+         <HBox id="H7">
+        <Label id="Label7" text="End Date" width="150px" />
+        <Input id ="Input7" width="180px" />
+         </HBox>
+       
+        <FlexBox  id = "FlexBoxId"  alignItems="Center" justifyContent="Start" class="saveButton">
+        <Button id="ButtonId" text="SAVE"  width="110px" type="Default" press="OnPressSave" />
+        </FlexBox>
+    </Panel>
+    </VBox>
+</mvc:View>

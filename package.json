@@ -6,14 +6,30 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^8",
-    "express": "^4"
+    "@sap/cds": "^8.3.0",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
+    "express": "^4",
+    "in": "^0.19.0"
   },
   "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
     "@cap-js/sqlite": "^1",
-    "@cap-js/cds-types": "^0.6"
+    "@sap/ux-specification": "^1.124.2",
+    "cds-swagger-ui-express": "^0.9.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-test": "cds watch --open test/webapp/index.html?sap-ui-xx-viewCache=false",
+    "doc":"cds compile srv --service all -o docs --to openapi"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    }
   }
 }
