@@ -24,10 +24,4 @@ service PersonDetailService {
     };
 }
 
-// service EmployeementDetailService {
 
-//     // entity EmplyeeD  as projection on detail.EmployeementDetail;
-//     entity Stud  as projection on detail.Student;
-//     entity NoteBook as projection on detail.NoteBook;
-
-// }

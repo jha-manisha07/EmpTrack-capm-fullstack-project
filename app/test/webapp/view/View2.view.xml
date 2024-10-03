@@ -1,0 +1,55 @@
+<mvc:View controllerName="test.capm.app.test.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+<VBox id="Vbox1">
+     <Panel id= "PanelId1">
+     <Table 
+            id="tableID"
+            inset="false"
+            items="{/d/results}"
+
+        headerText="List of Employee">
+            <columns>
+                <Column id="cl1">
+                    <Label text="First Name" id="lbl1"/>
+                </Column>
+                <Column id="cl2">
+                    <Label text="Last Name" id="lbl2"/>
+                </Column>
+                <Column id="cl3">
+                    <Label text="Email" id="lbl3"/>
+                </Column>
+                <Column id="cl4">
+                    <Label text="Designation" id="lbl4"/>
+                </Column>
+                <Column id="cl5">
+                    <Label text="Salary (INR)" id="lbl5"/>
+                </Column>
+                <Column id="cl6">
+                    <Label text="start Date" id="lbl6"/>
+                </Column>
+                <Column id="cl7">
+                    <Label text="End Date" id="lbl7"/>
+                </Column>
+                      
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle" id="cli1">
+                    <cells>
+                    
+                        <Text text="{First name}" wrapping="true" id="T1"/>
+                        <Text text="{employment_Last_Name}" wrapping="true" id="T2"/>
+                        <Text text="{employment_Email}" wrapping="true" id="T3"/>
+                        <Text text="{Position}" wrapping="true" id="T4"/>
+                        <Text text="{Salary}" wrapping="true" id="T5"/>
+                        <Text text="{path: 'StartDate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' }}" wrapping="true" id="T6"/>
+                        <Text text="{path: 'EndDate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' }}" wrapping="true" id="T7"/>
+                           
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+    </VBox>
+</mvc:View>

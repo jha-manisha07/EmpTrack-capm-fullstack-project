@@ -26,28 +26,4 @@ entity EmployeementDetail : cuid {
 }
 
 
-// entity Student : cuid {
-//     name  : String;
-//     class : Integer;
-// }
 
-// entity Rack : cuid {
-//     student_id : UUID;
-//     my_stud    : Association to Student
-//                      on my_stud.ID = student_id;
-// }
-
-// entity ManagedStudent : cuid {
-//     name  : String;
-//     class : Integer;
-// }
-
-// entity ManagedRack : cuid {
-//     student : Association to ManagedStudent;
-// }
-
-// entity NoteBook{
-//     key student_id : UUID;
-//         student    : Association to Student
-//                          on student.ID = student_id;
-// }

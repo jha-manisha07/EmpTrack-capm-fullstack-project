@@ -1,5 +1,5 @@
-<mvc:View controllerName="test.capm.app.test.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+<mvc:View xmlns:table="sap.ui.table" controllerName="test.capm.app.test.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
     xmlns="sap.m">
     <VBox id="V1" >
     <Panel id="panel" >
@@ -39,8 +39,10 @@
         <Input id ="Input7" width="180px" />
          </HBox>
        
-        <FlexBox  id = "FlexBoxId"  alignItems="Center" justifyContent="Start" class="saveButton">
+        <FlexBox  id = "FlexBoxId"  alignItems="Center" justifyContent="Start"  >
         <Button id="ButtonId" text="SAVE"  width="110px" type="Default" press="OnPressSave" />
+        <Button id="ButtonId1" text="Show Table"  width="110px" type="Default" press="OnPressShowTable" class="Showtable"  />
+
         </FlexBox>
     </Panel>
     </VBox>
